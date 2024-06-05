@@ -19,6 +19,6 @@ public class IntroToSpawnLogicScript : MonoBehaviour
 
     public void goToSpawnScene()
     {
-        //SceneManager.LoadScene("Spawn Room Scene Name")
+        SceneManager.LoadScene("Spawnroom");
     }
 }
