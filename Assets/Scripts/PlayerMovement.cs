@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     Vector2 movement;
+    public Animator animator;
+    public SpriteRenderer sprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,26 @@ public class PlayerMovement : MonoBehaviour
         // Input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        // prevents diagonal movement
+        if(movement.x != 0){
+            movement.y = 0;
+        } else if(movement.y != 0){
+            movement.x = 0;
+        }
+
+        // Updates parameters of animator
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Horizontal", movement.x);
+
+        // Flips sprite when going left/right
+        if(movement.x > 0){
+            sprite.flipX = false;
+        } else if(movement.x < 0){
+            sprite.flipX = true;
+        }
+
     }
 
     void FixedUpdate()
