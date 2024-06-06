@@ -672,8 +672,8 @@ GameObject:
   - component: {fileID: 1895378402}
   - component: {fileID: 1895378404}
   m_Layer: 0
-  m_Name: Audio Source
-  m_TagString: Untagged
+  m_Name: IntroBGM
+  m_TagString: CurrentAudio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -688,7 +688,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d20e3b82005fda7489fce1b286abe0a5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5cb9da80bb536e245894fab9c9b8753b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.15
   m_Pitch: 1
