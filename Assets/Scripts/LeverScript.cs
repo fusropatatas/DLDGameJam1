@@ -20,26 +20,29 @@ public class LeverScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (triggeredState)
+        if (triggeredState && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("on");
             door1.OpenTrigger();
             door2.OpenTrigger();
             isLeverOn = !isLeverOn;
             animator.SetBool("ActualToggle", isLeverOn);
-            triggeredState = false;
         }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("in");
-        triggeredState = true;
+        if (collision.CompareTag("Player"))
+        {
+            triggeredState = true;
+        }
 
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
         Debug.Log("out");
+        triggeredState = false;
     }
 }
