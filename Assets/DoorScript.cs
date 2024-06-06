@@ -17,22 +17,12 @@ public class DoorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Testing, delete later
-        if (Input.GetKeyDown(KeyCode.Q)){
-            isDoorOpen = !isDoorOpen;
-            go.GetComponentInChildren<SpriteRenderer>().enabled = isDoorOpen;
-        }
+ 
     }
 
-    public void Trigger()
+    public void OpenTrigger()
     {
-        if (GetComponent<BoxCollider2D>().enabled)
-        {
-            GetComponent<BoxCollider2D>().enabled = false;
-        }
-        else
-        {
-            GetComponent<BoxCollider2D>().enabled = true;
-        }
+        isDoorOpen = !isDoorOpen;
+        go.GetComponentInChildren<SpriteRenderer>().enabled = isDoorOpen;
     }
 }

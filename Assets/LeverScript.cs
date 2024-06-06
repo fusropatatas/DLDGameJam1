@@ -5,8 +5,8 @@ using UnityEngine;
 public class LeverScript : MonoBehaviour
 {
     public bool isLeverOn;
-    public GameObject door1;
-    public GameObject door2;
+    public DoorScript door1;
+    public DoorScript door2;
     public Animator animator;
     //int toggle = 1;
 
@@ -26,13 +26,10 @@ public class LeverScript : MonoBehaviour
     {
         if (collision.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
-            
-            // Testing, delete later
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                isLeverOn = !isLeverOn;
-                animator.SetBool("ActualToggle", isLeverOn);
-            }
+            door1.OpenTrigger();
+            door2.OpenTrigger();
+            isLeverOn = !isLeverOn;
+            animator.SetBool("ActualToggle", isLeverOn);
         }
     }
 
