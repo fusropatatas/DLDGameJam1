@@ -35,14 +35,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", movement.sqrMagnitude);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Horizontal", movement.x);
-
-        // Flips sprite when going left/right
-        if(movement.x > 0){
-            sprite.flipX = false;
-        } else if(movement.x < 0){
-            sprite.flipX = true;
-        }
-
+        
     }
 
     void FixedUpdate()
