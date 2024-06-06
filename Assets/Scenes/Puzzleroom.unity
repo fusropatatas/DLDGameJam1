@@ -8450,7 +8450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8630737482711285379, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 9087346366385905634, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
       propertyPath: door1
