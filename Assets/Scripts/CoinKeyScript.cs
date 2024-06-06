@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CoinKeyScript : MonoBehaviour
 {
+
+    public DoorScript door1;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +22,7 @@ public class CoinKeyScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //code for adding key to inv
-            //code to call CoinKeyDoor OpenTrigger
+            door1.OpenTrigger();
             Destroy(gameObject);
         }
     }
