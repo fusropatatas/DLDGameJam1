@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     public Animator animator;
     public SpriteRenderer sprite;
+    //private bool isAttacking = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,10 @@ public class PlayerMovement : MonoBehaviour
         if(movement.x != 0 || movement.y != 0){
             animator.SetFloat("LastX", movement.x);
             animator.SetFloat("LastY", movement.y);
+        }
+
+        if(Input.GetKeyDown("space")){
+            animator.SetTrigger("isAttacking");
         }
         
     }
