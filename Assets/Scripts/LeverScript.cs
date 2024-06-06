@@ -5,6 +5,7 @@ using UnityEngine;
 public class LeverScript : MonoBehaviour
 {
     public bool isLeverOn;
+    public bool triggeredState;
     public DoorScript door1;
     public DoorScript door2;
     public Animator animator;
@@ -19,22 +20,26 @@ public class LeverScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
+        if (triggeredState)
         {
+            Debug.Log("on");
             door1.OpenTrigger();
             door2.OpenTrigger();
             isLeverOn = !isLeverOn;
             animator.SetBool("ActualToggle", isLeverOn);
+            triggeredState = false;
         }
     }
 
-    public void OnTriggerExit(Collider other)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("in");
+        triggeredState = true;
 
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("out");
     }
 }

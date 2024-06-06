@@ -23,6 +23,7 @@ public class DoorScript : MonoBehaviour
     public void OpenTrigger()
     {
         isDoorOpen = !isDoorOpen;
-        go.GetComponentInChildren<SpriteRenderer>().enabled = isDoorOpen;
+        go.GetComponentInChildren<SpriteRenderer>().enabled = !isDoorOpen;
+        GetComponent<BoxCollider2D>().enabled = !isDoorOpen;
     }
 }
