@@ -21,6 +21,7 @@ public class CoinKeyScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             //code for adding key to inv
+            //code to call CoinKeyDoor OpenTrigger
             Destroy(gameObject);
         }
     }
