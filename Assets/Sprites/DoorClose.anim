@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LeverAnimation
+  m_Name: DoorClose
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1947538656, guid: 457af870aa9cae2479194051f030e8e3, type: 3}
+      value: {fileID: -797740769, guid: 00ba511dcc13a5a4bb4dd20148db28ef, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +44,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1947538656, guid: 457af870aa9cae2479194051f030e8e3, type: 3}
+    - {fileID: -797740769, guid: 00ba511dcc13a5a4bb4dd20148db28ef, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

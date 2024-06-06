@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2424646733893642115, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: go
+      value: 
+      objectReference: {fileID: 1648888409}
     - target: {fileID: 3013694028479237353, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.74
@@ -174,6 +178,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door3
       objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -183,6 +215,11 @@ PrefabInstance:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3448330683583657046, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
   m_PrefabInstance: {fileID: 79628268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &84634418 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 390901159888564393, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+  m_PrefabInstance: {fileID: 1742083613}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &97959581
 PrefabInstance:
@@ -244,11 +281,20 @@ PrefabInstance:
       propertyPath: door2
       value: 
       objectReference: {fileID: 999543087}
+    - target: {fileID: 9087346366385905634, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1271140951}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+--- !u!1 &257099760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 444892079692095206, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+  m_PrefabInstance: {fileID: 717503636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &353468026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -257,6 +303,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2424646733893642115, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: go
+      value: 
+      objectReference: {fileID: 661614732}
     - target: {fileID: 3013694028479237353, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.57
@@ -301,6 +351,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door4
       objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -311,6 +389,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3448330683583657046, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
   m_PrefabInstance: {fileID: 353468026}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &355978453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 444892079692095206, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+  m_PrefabInstance: {fileID: 562081012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &456689753 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 390901159888564393, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+  m_PrefabInstance: {fileID: 2032817715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &562081012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -319,6 +407,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2424646733893642115, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: go
+      value: 
+      objectReference: {fileID: 355978453}
     - target: {fileID: 3013694028479237353, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09
@@ -363,6 +455,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door2
       objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -397,7 +517,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563111608}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95a077dcc9e28fc428f68568cb231d69, type: 3}
   m_Name: 
@@ -405,6 +525,7 @@ MonoBehaviour:
   isLeverOn: 0
   door1: {fileID: 0}
   door2: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!4 &563111610
 Transform:
   m_ObjectHideFlags: 0
@@ -480,11 +601,20 @@ PrefabInstance:
       propertyPath: door2
       value: 
       objectReference: {fileID: 717503637}
+    - target: {fileID: 9087346366385905634, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1634993658}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+--- !u!1 &661614732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 444892079692095206, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+  m_PrefabInstance: {fileID: 353468026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &717503636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -493,6 +623,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2424646733893642115, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: go
+      value: 
+      objectReference: {fileID: 257099760}
     - target: {fileID: 3013694028479237353, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.4
@@ -537,6 +671,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door5
       objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -555,6 +717,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2424646733893642115, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: go
+      value: 
+      objectReference: {fileID: 2027655602}
     - target: {fileID: 3013694028479237353, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.01
@@ -599,6 +765,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door7
       objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -608,6 +802,41 @@ PrefabInstance:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3448330683583657046, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
   m_PrefabInstance: {fileID: 999543086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1073262607 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 390901159888564393, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+  m_PrefabInstance: {fileID: 1982126350}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1271140951 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 390901159888564393, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+  m_PrefabInstance: {fileID: 97959581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1428316558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 444892079692095206, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+  m_PrefabInstance: {fileID: 2124875495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1625157015 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 390901159888564393, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+  m_PrefabInstance: {fileID: 1637879408187991246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1634993658 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 390901159888564393, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+  m_PrefabInstance: {fileID: 563434975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1636181312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 444892079692095206, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+  m_PrefabInstance: {fileID: 1771284238302256638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1648888409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 444892079692095206, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+  m_PrefabInstance: {fileID: 79628268}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1742083613
 PrefabInstance:
@@ -669,6 +898,10 @@ PrefabInstance:
       propertyPath: door2
       value: 
       objectReference: {fileID: 999543087}
+    - target: {fileID: 9087346366385905634, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 84634418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -735,7 +968,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.66
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -826,11 +1059,20 @@ PrefabInstance:
       propertyPath: door2
       value: 
       objectReference: {fileID: 562081013}
+    - target: {fileID: 9087346366385905634, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1073262607}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+--- !u!1 &2027655602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 444892079692095206, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+  m_PrefabInstance: {fileID: 999543086}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2032817715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -891,6 +1133,10 @@ PrefabInstance:
       propertyPath: door2
       value: 
       objectReference: {fileID: 2124875496}
+    - target: {fileID: 9087346366385905634, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 456689753}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -904,6 +1150,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2424646733893642115, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: go
+      value: 
+      objectReference: {fileID: 1428316558}
     - target: {fileID: 3013694028479237353, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.21
@@ -947,6 +1197,34 @@ PrefabInstance:
     - target: {fileID: 3448330683583657046, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_Name
       value: Door6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1018,6 +1296,10 @@ PrefabInstance:
       propertyPath: door2
       value: 
       objectReference: {fileID: 717503637}
+    - target: {fileID: 9087346366385905634, guid: e4e899eb0fa693243a856ef870ab2808, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1625157015}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1031,6 +1313,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2424646733893642115, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: go
+      value: 
+      objectReference: {fileID: 1636181312}
     - target: {fileID: 3013694028479237353, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.66
@@ -1086,6 +1372,34 @@ PrefabInstance:
     - target: {fileID: 3448330683583657046, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_Name
       value: Door1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742136783130901614, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
