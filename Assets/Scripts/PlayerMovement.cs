@@ -48,4 +48,33 @@ public class PlayerMovement : MonoBehaviour
         // Movement
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    // put this function in player controller script
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        GameObject player = this.gameObject;
+
+        // when player collides with enemy
+        if (col.gameObject.tag.Equals("Enemy"))
+        {
+            npcScript npc = col.gameObject.GetComponent<npcScript>();
+
+            float offsetX = 0.0f;
+            float offsetY = 0.0f;
+
+            if (npc.GetDirection().Equals("down"))
+                offsetY = -0.5f;
+
+            else if (npc.GetDirection().Equals("up"))
+                offsetY = 0.5f;
+
+            else if (npc.GetDirection().Equals("left"))
+                offsetX = -0.5f;
+
+            else if (npc.GetDirection().Equals("right"))
+                offsetX = 0.5f;
+
+            player.transform.position += new Vector3(offsetX, offsetY, 0.0f);
+        }
+    }
 }
