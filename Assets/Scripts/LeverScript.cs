@@ -24,7 +24,7 @@ public class LeverScript : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
+        if (collision.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
         {
             door1.OpenTrigger();
             door2.OpenTrigger();
