@@ -19,6 +19,10 @@ public class TestColliderScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("Puzzleroom");
+
+        if (collision.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Puzzleroom");
+        }
     }
 }
