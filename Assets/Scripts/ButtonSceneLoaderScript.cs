@@ -26,4 +26,9 @@ public class IntroToSpawnLogicScript : MonoBehaviour
     {
         SceneManager.LoadScene("Intro Screen");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
