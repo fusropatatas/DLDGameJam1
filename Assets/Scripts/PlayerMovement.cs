@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
         playerHealth = this.gameObject.AddComponent<Health>() as Health;
         playerHealth.maxHealth = 10;
+        playerHealth.entityName = "Player";
     }
 
     // Update is called once per frame

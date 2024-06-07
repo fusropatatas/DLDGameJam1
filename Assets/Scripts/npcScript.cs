@@ -39,6 +39,7 @@ public class npcScript : MonoBehaviour
 
         mobHealth = this.gameObject.AddComponent<Health>() as Health;
         mobHealth.maxHealth = 10;
+        mobHealth.entityName = "Mob";
     }
 
     // Update is called once per frame

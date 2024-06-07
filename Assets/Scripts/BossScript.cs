@@ -39,6 +39,7 @@ public class bossScript : MonoBehaviour
 
         bossHealth = this.gameObject.AddComponent<Health>() as Health;
         bossHealth.maxHealth = 50;
+        bossHealth.entityName = "Boss";
     }
 
     // Update is called once per frame
