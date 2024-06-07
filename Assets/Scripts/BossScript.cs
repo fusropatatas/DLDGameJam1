@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class npcScript : MonoBehaviour
+public class bossScript : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     
@@ -84,6 +84,7 @@ public class npcScript : MonoBehaviour
             if (currentPosition.x <= targetX)
             {
                 npc.SetPositionAndRotation(new Vector3(targetX, currentPosition.y, 0.0f), Quaternion.identity);
+                animator.SetTrigger("isAttacking");
 
                 if(!isChasing)
                 {
