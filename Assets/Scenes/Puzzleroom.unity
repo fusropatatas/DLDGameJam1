@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 80688202}
   m_Layer: 0
   m_Name: PuzzleRoomBGM
-  m_TagString: CurrentAudio
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5388,7 +5388,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1110633314, guid: 457af870aa9cae2479194051f030e8e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8838,7 +8838,7 @@ MonoBehaviour:
   rb: {fileID: 1265154804}
   animator: {fileID: 1265154802}
   sprite: {fileID: 1265154805}
-  hasSword: 0
+  hasSword: 1
   hasShield: 0
 --- !u!50 &1265154804
 Rigidbody2D:
