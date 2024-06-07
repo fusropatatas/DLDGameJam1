@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     public Animator animator;
     public SpriteRenderer sprite;
+    public bool hasSword = false;
+    public bool hasShield = false;
     //private bool isAttacking = false;
     // Start is called before the first frame update
     void Start()
@@ -42,8 +44,9 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("LastY", movement.y);
         }
 
+        // Player Attacks
         if(Input.GetKeyDown("space")){
-            animator.SetTrigger("isAttacking");
+            Attack();
         }
         
     }
@@ -81,5 +84,12 @@ public class PlayerMovement : MonoBehaviour
 
             player.transform.position += new Vector3(offsetX, offsetY, 0.0f);
         }
+    }
+
+    void Attack()
+    {
+        animator.SetBool("hasSword", hasSword);
+        animator.SetBool("hasShield", hasShield);
+        animator.SetTrigger("isAttacking");
     }
 }
