@@ -22,7 +22,6 @@ public class LeverScript : MonoBehaviour
     {
         if (triggeredState && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("on");
             door1.OpenTrigger();
             door2.OpenTrigger();
             isLeverOn = !isLeverOn;
@@ -32,7 +31,6 @@ public class LeverScript : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("in");
         if (collision.CompareTag("Player"))
         {
             triggeredState = true;
@@ -42,7 +40,6 @@ public class LeverScript : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("out");
         triggeredState = false;
     }
 }
