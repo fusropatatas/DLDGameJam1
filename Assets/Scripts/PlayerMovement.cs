@@ -84,6 +84,11 @@ public class PlayerMovement : MonoBehaviour
 
             player.transform.position += new Vector3(offsetX, offsetY, 0.0f);
         }
+
+        if (col.gameObject.tag.Equals("Sword"))
+        {
+            hasSword = true;
+        }
     }
 
     void Attack()
