@@ -80,6 +80,7 @@ public class npcScript : MonoBehaviour
 
             npc.GetPositionAndRotation(out currentPosition, out q);
 
+            // npc attacks
             if (currentPosition.x <= targetX)
             {
                 npc.SetPositionAndRotation(new Vector3(targetX, currentPosition.y, 0.0f), Quaternion.identity);
