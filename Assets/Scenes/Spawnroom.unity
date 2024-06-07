@@ -1008,7 +1008,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 342288204}
-  m_Layer: 0
+  - component: {fileID: 342288205}
+  m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1032,6 +1033,18 @@ Transform:
   - {fileID: 1274184017}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &342288205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342288203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0610160a7e668c6499c881796828e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &370155483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2549,6 +2562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 310761178}
+  UI: {fileID: 342288205}
 --- !u!1 &835450677
 GameObject:
   m_ObjectHideFlags: 0
