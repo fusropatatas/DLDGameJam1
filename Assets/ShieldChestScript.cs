@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ShieldChestScript : MonoBehaviour
 {
+    public Animator animator;
+    public PlayerMovement player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,9 @@ public class ShieldChestScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("in");
-            //animation code
+            animator.SetBool("isChestOpen", true);
+            player.hasShield = true;
+            
             //potentially inventory addition
         }
     }

@@ -8574,6 +8574,7 @@ GameObject:
   - component: {fileID: 803480702}
   - component: {fileID: 803480701}
   - component: {fileID: 803480700}
+  - component: {fileID: 803480704}
   m_Layer: 0
   m_Name: ShieldChest
   m_TagString: Untagged
@@ -8593,6 +8594,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb8a5ab5c9a014c44b1b1446f875cddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 803480704}
+  player: {fileID: 1265154803}
 --- !u!61 &803480701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8705,6 +8708,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &803480704
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803480699}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9ea5e1fcfefe84e519ae32be560fdf6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &999543086
 PrefabInstance:
   m_ObjectHideFlags: 0
