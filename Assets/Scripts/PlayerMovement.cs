@@ -11,13 +11,24 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     public Animator animator;
     public SpriteRenderer sprite;
+    private GameObject sword;
+    private Health playerHealth;
     public bool hasSword = false;
     public bool hasShield = false;
+    private string direction;
     //private bool isAttacking = false;
-    // Start is called before the first frame update
+
     void Start()
     {
-        
+        sword = new GameObject("PlayerSword");
+        sword.AddComponent<PlayerSword>();
+        sword.transform.SetParent(this.gameObject.transform);
+        sword.transform.localPosition = new Vector3(0.0f, -0.75f, 0.0f);
+
+        direction = "down";
+
+        playerHealth = this.gameObject.AddComponent<Health>() as Health;
+        playerHealth.maxHealth = 10;
     }
 
     // Update is called once per frame
@@ -28,10 +39,37 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         // prevents diagonal movement
-        if(movement.x != 0){
+        if(movement.x != 0)
+        {
             movement.y = 0;
-        } else if(movement.y != 0){
+
+            // set sword hitbox location and player direction
+            if(movement.x > 0)
+            {
+                sword.transform.localPosition = new Vector3(0.75f, 0.0f, 0.0f);
+                direction = "right";
+            }
+            else
+            {
+                sword.transform.localPosition = new Vector3(-0.75f, 0.0f, 0.0f);
+                direction = "left";
+            }
+        }
+        else if(movement.y != 0)
+        {
             movement.x = 0;
+
+            // set sword hitbox location and player direction
+            if(movement.y > 0)
+            {
+                sword.transform.localPosition = new Vector3(0.0f, 0.75f, 0.0f);
+                direction = "up";
+            }
+            else
+            {
+                sword.transform.localPosition = new Vector3(0.0f, -0.75f, 0.0f);
+                direction = "down";
+            }
         }
 
         // Updates parameters of animator
@@ -48,7 +86,6 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown("space")){
             Attack();
         }
-        
     }
 
     void FixedUpdate()
@@ -57,13 +94,12 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    // put this function in player controller script
     void OnCollisionEnter2D(Collision2D col)
     {
         GameObject player = this.gameObject;
 
         // when player collides with enemy
-        if (col.gameObject.tag.Equals("Enemy"))
+        if (col.gameObject.CompareTag("Enemy"))
         {
             npcScript npc = col.gameObject.GetComponent<npcScript>();
 
@@ -83,7 +119,11 @@ public class PlayerMovement : MonoBehaviour
                 offsetX = 0.5f;
 
             player.transform.position += new Vector3(offsetX, offsetY, 0.0f);
-        } else if (col.gameObject.tag.Equals("Boss"))
+
+            playerHealth.TakeDamage(2);
+        }
+
+        else if (col.gameObject.tag.Equals("Boss"))
         {
             bossScript npc = col.gameObject.GetComponent<bossScript>();
 
@@ -103,9 +143,11 @@ public class PlayerMovement : MonoBehaviour
                 offsetX = 0.5f;
 
             player.transform.position += new Vector3(offsetX, offsetY, 0.0f);
+
+            playerHealth.TakeDamage(4);
         }
 
-        if (col.gameObject.tag.Equals("Sword"))
+        if (col.gameObject.CompareTag("Sword"))
         {
             hasSword = true;
         }
@@ -116,5 +158,10 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("hasSword", hasSword);
         animator.SetBool("hasShield", hasShield);
         animator.SetTrigger("isAttacking");
+    }
+
+    public string GetDirection()
+    {
+        return direction;
     }
 }

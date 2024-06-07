@@ -18,6 +18,8 @@ public class npcScript : MonoBehaviour
     private bool isChasing;
 
     private string direction;
+
+    private Health mobHealth;
     
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,9 @@ public class npcScript : MonoBehaviour
         isChasing = false;
 
         direction = "down";
+
+        mobHealth = this.gameObject.AddComponent<Health>() as Health;
+        mobHealth.maxHealth = 10;
     }
 
     // Update is called once per frame
