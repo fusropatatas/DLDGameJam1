@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwordItemScript : MonoBehaviour
 {
     public DoorScript door;
+    public TutorialUIScript UI;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class SwordItemScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //code for triggering the ui swap
+            UI.UISwap();
             door.OpenTrigger();
             Destroy(gameObject);
         }

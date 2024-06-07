@@ -100,6 +100,26 @@ public class PlayerMovement : MonoBehaviour
                 offsetX = 0.5f;
 
             player.transform.position += new Vector3(offsetX, offsetY, 0.0f);
+        } else if (col.gameObject.tag.Equals("Boss"))
+        {
+            bossScript npc = col.gameObject.GetComponent<bossScript>();
+
+            float offsetX = 0.0f;
+            float offsetY = 0.0f;
+
+            if (npc.GetDirection().Equals("down"))
+                offsetY = -0.5f;
+
+            else if (npc.GetDirection().Equals("up"))
+                offsetY = 0.5f;
+
+            else if (npc.GetDirection().Equals("left"))
+                offsetX = -0.5f;
+
+            else if (npc.GetDirection().Equals("right"))
+                offsetX = 0.5f;
+
+            player.transform.position += new Vector3(offsetX, offsetY, 0.0f);
         }
 
         if (col.gameObject.CompareTag("Sword"))
