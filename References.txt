@@ -1,0 +1,40 @@
+Assorted 16-bit assets for map tiles, character sprites, and objects:
+
+https://opengameart.org/content/zelda-like-tilesets-and-sprites
+
+
+============================================================
+
+Enemy NPC assets:
+
+Mob
+https://opengameart.org/content/elder-skeleton
+
+Boss
+https://opengameart.org/content/skeletons-rework
+
+============================================================
+
+Soundtrack:
+
+Intro
+https://www.youtube.com/watch?v=u7Qt0P02YNQ
+
+Puzzle
+https://www.youtube.com/watch?v=68NNLXEU3WQ
+
+Boss
+https://www.youtube.com/watch?v=UN_XHkfNnMA
+
+============================================================
+
+Tutorial Assets:
+
+W-A-S-D Keys
+https://www.iconexperience.com/v_collection/icons/?icon=keyboard_key_w
+https://www.iconexperience.com/v_collection/icons/?icon=keyboard_key_a
+https://www.iconexperience.com/v_collection/icons/?icon=keyboard_key_s
+https://www.iconexperience.com/v_collection/icons/?icon=keyboard_key_d
+
+Spacebar Key
+https://uxwing.com/space-button-icon/
