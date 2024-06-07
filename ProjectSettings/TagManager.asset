@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CurrentAudio
   - Sword
+  - RoomDoor
   layers:
   - Default
   - TransparentFX
