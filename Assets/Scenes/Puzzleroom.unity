@@ -8575,6 +8575,7 @@ GameObject:
   - component: {fileID: 803480701}
   - component: {fileID: 803480700}
   - component: {fileID: 803480704}
+  - component: {fileID: 803480705}
   m_Layer: 0
   m_Name: ShieldChest
   m_TagString: Untagged
@@ -8681,7 +8682,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -643576466, guid: 457af870aa9cae2479194051f030e8e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8729,6 +8730,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &803480705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803480699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76de554eba15324b827548737d606ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Shield
+  quantity: 1
+  sprite: {fileID: 21300000, guid: d22e27c50543a624aacf62eac2d993be, type: 3}
 --- !u!1001 &999543086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9521,7 +9537,7 @@ Transform:
   m_GameObject: {fileID: 1265154801}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.97, y: 4.42, z: 0}
+  m_LocalPosition: {x: -10.34, y: 4.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9717,11 +9733,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3013694028479237353, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.49
+      value: -8.48
       objectReference: {fileID: 0}
     - target: {fileID: 3013694028479237353, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.02
+      value: -4.1
       objectReference: {fileID: 0}
     - target: {fileID: 3013694028479237353, guid: 56d958b90341dc54f891cb36e7743867, type: 3}
       propertyPath: m_LocalPosition.z
