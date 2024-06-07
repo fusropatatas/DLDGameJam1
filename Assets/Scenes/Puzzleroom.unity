@@ -8562,6 +8562,8 @@ MonoBehaviour:
   rb: {fileID: 1265154804}
   animator: {fileID: 1265154802}
   sprite: {fileID: 1265154805}
+  hasSword: 1
+  hasShield: 0
 --- !u!50 &1265154804
 Rigidbody2D:
   serializedVersion: 4
