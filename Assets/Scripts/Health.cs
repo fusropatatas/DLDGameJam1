@@ -14,7 +14,9 @@ public class Health : MonoBehaviour
     void Start()
     {
         health = maxHealth;
-        slider.value = health;
+
+        if(slider != null)
+            slider.value = health;
     }
 
     // Update is called once per frame
@@ -26,7 +28,9 @@ public class Health : MonoBehaviour
     public void TakeDamage(int amount) 
     {
         health -= amount;
-        slider.value = health;
+        
+        if(slider != null)
+            slider.value = health;
         
         if(health <=0) 
         {

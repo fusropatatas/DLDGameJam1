@@ -18,6 +18,8 @@ public class bossScript : MonoBehaviour
     private bool isChasing;
 
     private string direction;
+
+    private Health bossHealth;
     
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,9 @@ public class bossScript : MonoBehaviour
         isChasing = false;
 
         direction = "down";
+
+        bossHealth = this.gameObject.AddComponent<Health>() as Health;
+        bossHealth.maxHealth = 50;
     }
 
     // Update is called once per frame
